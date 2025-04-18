@@ -1,0 +1,23 @@
+https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_CN5G.md
+
+cd OAI/openairinterface5g/doc/tutorial_resources/oai-cn5
+
+SIM CARD READER
+===============
+cd uicc-v3.3
+
+RUN OAI GNB
+===========
+/home/mhossen/OAI/openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf
+
+cd ~/OAI/openairinterface5g/cmake_targets/ran_build/build
+sudo ./nr-softmodem -O /home/mhossen/OAI/openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf -E --continuous-tx
+
+
+
+Container ip
+============
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name_or_id>
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' oai-upf
+
+
