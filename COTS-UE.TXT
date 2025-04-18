@@ -1,6 +1,6 @@
 https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_CN5G.md
 
-cd OAI/openairinterface5g/doc/tutorial_resources/oai-cn5
+cd OAI/openairinterface5g/doc/tutorial_resources/oai-cn5g
 
 SIM CARD READER
 ===============
