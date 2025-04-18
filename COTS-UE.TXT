@@ -31,3 +31,14 @@ default via 152.14.96.1 dev eno8303 proto dhcp src 152.14.96.75 metric 10
 Your internet-facing interface is: eno8303
 
 sudo sysctl -w net.ipv4.ip_forward=1
+
+
+PDU Session
+===========
+docker logs -f oai-smf | grep -i "PDU"
+
+
+Docker:
+=======
+docker compose down
+docker compose up -d
